@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.Select;
 
 public class HotelsPOMclass 
 {
- private WebDriver driver;
+ WebDriver driver;
 
  
  @FindBy(xpath=("//input[@id='filterText']"))
- private WebElement City;	
+ WebElement City;	
 	
  public void CityName(String CityName) 
  {
@@ -25,7 +25,7 @@ public class HotelsPOMclass
 	
 
  @FindBy(xpath=("//div[@class='right_type']"))
- private WebElement SelectCity;	
+ WebElement SelectCity;	
  
 	
  
@@ -34,7 +34,7 @@ public class HotelsPOMclass
  
 
  @FindBy(xpath=("//input[@id='user-data-wrapper-id']"))
- private WebElement SelectFacility;	
+ WebElement SelectFacility;	
 	
  public void SelectFacility()
  {
@@ -61,7 +61,7 @@ public class HotelsPOMclass
  
  
  @FindBy(xpath=("//button[text()='Done']"))
- private WebElement Done;	
+ WebElement Done;	
 	
  public void DoneClick()
  {
@@ -72,7 +72,7 @@ public class HotelsPOMclass
  
  
  @FindBy(xpath=("//button[@class='btn btn-md yellow-gradient home-btn']"))
- private WebElement Find;	
+  WebElement Find;	
 	
  public void FindButton()
  {
@@ -81,7 +81,7 @@ public class HotelsPOMclass
  }
  
  @FindBy(xpath=("(//div[@class='mid-searchpack'])[2]"))
- private WebElement SecondHotel;	
+  WebElement SecondHotel;	
 	
  public void SecondHotel()
  {

@@ -19,7 +19,7 @@ public class Scenario1 extends TestBaseClass
 	  HP.CloseDisha();
 	  HP.Menubutton();
 	  HP.Holidays();	  
-	  HP.Stays();
+	  HP.Stays(); 
 	  HP.Lounge();
 	  
 	  List<String> ChangePage1 = new ArrayList<String>(driver.getWindowHandles());

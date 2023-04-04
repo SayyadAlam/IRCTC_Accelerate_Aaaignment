@@ -15,7 +15,7 @@ public class Irctc_HomePOMclass
 
 	
 	@FindBy(xpath=("//*[@id='disha-banner-close']"))
-	 private WebElement close;	
+	  WebElement close;	
 	
 	public void CloseDisha()
 	{
@@ -24,7 +24,7 @@ public class Irctc_HomePOMclass
 	
 	
 	@FindBy(xpath=("//div[@class='h_menu_drop_button hidden-xs']"))
-	 private WebElement MenuButton;	
+	  WebElement MenuButton;	
 	
 	public void Menubutton()
 	{
@@ -32,7 +32,7 @@ public class Irctc_HomePOMclass
 	}
 	
 	@FindBy(xpath=("//label[@for='drop-2']"))
-	 private WebElement Holidays;	
+	 WebElement Holidays;	
 	
 	public void Holidays()
 	{ 
@@ -40,7 +40,7 @@ public class Irctc_HomePOMclass
 	}
 	
 	@FindBy(xpath=("(//span[text()='Stays'])[2]"))
-	 private WebElement Stays;	
+	 WebElement Stays;	
 	
 	public void Stays()
 	{
@@ -48,7 +48,7 @@ public class Irctc_HomePOMclass
 	}
 	
 	@FindBy(xpath=("(//span[text()='Lounge'])[2]"))
-	 private WebElement Lounge;	
+	 WebElement Lounge;	
 	
 	public void Lounge()
 	{

@@ -14,7 +14,7 @@ private Select M;
 
 
 @FindBy(xpath=("//b[text()='Continue to Book']"))
-private WebElement ContBook;	
+ WebElement ContBook;	
 	
 public void ContinuetoBook() 
 {
@@ -25,7 +25,7 @@ public void ContinuetoBook()
 
 
 @FindBy(xpath=("//select[@name='title']"))
-private WebElement Title ;	
+WebElement Title ;	
 	
 public void TitleField() 
 {
@@ -36,7 +36,7 @@ public void TitleField()
 
 
 @FindBy(xpath=("(//input[contains(@class,'form-control ng-pristine')])[1]"))
-private WebElement Firstname;	
+WebElement Firstname;	
 	
 public void FirstName() 
 {
@@ -45,7 +45,7 @@ public void FirstName()
 }
 
 @FindBy(xpath=("(//input[contains(@class,'form-control ng-pristine')])[2]"))
-private WebElement Lastname;	
+WebElement Lastname;	
 	
 public void LastName() 
 {
@@ -54,7 +54,7 @@ public void LastName()
 }
 
 @FindBy(xpath=("//select[@name='state']"))
-private WebElement State ;	
+WebElement State ;	
 
 public void StateSelect() 
 {
@@ -64,7 +64,7 @@ public void StateSelect()
 }
 
 @FindBy(xpath=("//button[text()='Continue']"))
-private WebElement Continue ;	
+WebElement Continue ;	
 
 public void ClickonContinue() 
 {
@@ -73,7 +73,7 @@ public void ClickonContinue()
 }
 
 @FindBy(xpath=("//span[@class='checkmark']"))
-private WebElement ClickMark ;	
+WebElement ClickMark ;	
 
 public void ClickMark() 
 {
@@ -82,7 +82,7 @@ public void ClickMark()
 }
 
 @FindBy(xpath=("//button[text()='Make Payment']"))
-private WebElement MakePayment ;	
+WebElement MakePayment ;	
 
 public void MakePayment() throws InterruptedException 
 {
@@ -93,7 +93,7 @@ public void MakePayment() throws InterruptedException
   
 
 @FindBy(xpath=("//button[text()='Verify']"))
-private WebElement Verify ;	
+WebElement Verify ;	
 
 public void Verify() 
 {

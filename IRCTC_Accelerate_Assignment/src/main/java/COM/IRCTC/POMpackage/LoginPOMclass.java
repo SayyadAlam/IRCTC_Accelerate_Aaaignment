@@ -12,7 +12,7 @@ private WebDriver driver;
 
 
 @FindBy(xpath="(//a[@class='nav-link'])[1]")
-WebElement LogIn;
+ WebElement LogIn;
 
 public void LogInMethod()
 {
@@ -20,7 +20,7 @@ public void LogInMethod()
 }
 
 @FindBy(xpath="//a[@id='profile-tab']")
-private WebElement GuestLogin;
+ WebElement GuestLogin;
 
 public void GuestUserLogin()
 {
@@ -29,7 +29,7 @@ public void GuestUserLogin()
 
 
 @FindBy(xpath="//input[@id='modalLRInput12']")
-private WebElement Email;
+ WebElement Email;
 
 public void Emails()
 {
@@ -38,7 +38,7 @@ public void Emails()
 }
 
 @FindBy(xpath="(//input[@class='form-control ng-untouched ng-pristine ng-invalid'])[3]")
-private WebElement MobileNum;
+ WebElement MobileNum;
 
 public void MobileNumber()
 {
@@ -47,7 +47,7 @@ public void MobileNumber()
 }
 
 @FindBy(xpath="(//button[text()='Login'])[2]")
-private WebElement ClickLogin;
+ WebElement ClickLogin;
 
 public void ClickLoginButton()
 {
@@ -57,7 +57,7 @@ public void ClickLoginButton()
 
 
 @FindBy(xpath="/html/body/app-root/tourpkgs/div[2]/div[2]/ul/li[2]/a")
-private WebElement Hotels;
+ WebElement Hotels;
 
 public void ClickHotels()
 {
