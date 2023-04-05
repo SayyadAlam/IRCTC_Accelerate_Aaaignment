@@ -15,7 +15,7 @@ public WebDriver driver;
 @BeforeMethod
 public void setup()
 {
-	System.setProperty("webdriver.chrome.driver","./Drivers//chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","./D//chromedriver.exe");
 	
 	driver = new ChromeDriver();
 	
@@ -31,7 +31,7 @@ public void setup()
   @AfterMethod
   public void teardown()
   {
-	 driver.quit();
+	 //driver.quit();
   }
 
 

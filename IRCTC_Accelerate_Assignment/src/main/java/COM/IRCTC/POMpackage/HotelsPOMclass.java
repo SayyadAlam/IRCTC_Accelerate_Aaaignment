@@ -1,16 +1,22 @@
 package COM.IRCTC.POMpackage;
 
+import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HotelsPOMclass 
 {
  WebDriver driver;
-
+ Actions act;
+ 
  
  @FindBy(xpath=("//input[@id='filterText']"))
  WebElement City;	
@@ -19,20 +25,22 @@ public class HotelsPOMclass
  {
 	
 	 City.sendKeys(CityName);
-	 SelectCity.click();
-
+	 
  }
-	
 
- @FindBy(xpath=("//div[@class='right_type']"))
- WebElement SelectCity;	
  
+ @FindBy(xpath=("/html/body/app-root/app-fulllayout/app-home/div[2]/div[2]/div/app-hotelmodify/form/div[1]/searchbox/div/ul/li[3]/a/div[1]"))
+ public WebElement Selectfirst;	
+ 
+ public void SelectCity()
+ {
 	
- 
- 
- 
+	 
+	 act.moveToElement(Selectfirst).click().perform();
+ }
  
 
+ 
  @FindBy(xpath=("//input[@id='user-data-wrapper-id']"))
  WebElement SelectFacility;	
 	
@@ -60,14 +68,13 @@ public class HotelsPOMclass
 	
  
  
- @FindBy(xpath=("//button[text()='Done']"))
+ @FindBy(xpath=("//button[@class='btn btn-sm btn-radius-none yellow-gradient']"))
  WebElement Done;	
 	
- public void DoneClick()
+ public void ClickOnDone()
  {
 	 Done.click();
 	 
-	
  }
  
  
@@ -93,8 +100,7 @@ public class HotelsPOMclass
  {
 	 Element.click();
 	 Select s = new Select(Element);
-	 s.selectByValue(value);
-	 
+	 s.selectByValue(value); 
  }
  
 	
@@ -104,6 +110,7 @@ public class HotelsPOMclass
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver,this);
+		act = new Actions(driver);
 		
 		
 		

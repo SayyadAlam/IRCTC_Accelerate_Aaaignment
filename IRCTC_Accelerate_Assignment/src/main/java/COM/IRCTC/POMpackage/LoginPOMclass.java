@@ -18,7 +18,7 @@ public void LogInMethod()
 {
 	LogIn.click();
 }
-
+               
 @FindBy(xpath="//a[@id='profile-tab']")
  WebElement GuestLogin;
 
@@ -34,7 +34,7 @@ public void GuestUserLogin()
 public void Emails()
 {
 	Email.click();
-	Email.sendKeys("alam.hawaldar@gmail.com");
+	Email.sendKeys("alam.hawaldar123@gmail.com");
 }
 
 @FindBy(xpath="(//input[@class='form-control ng-untouched ng-pristine ng-invalid'])[3]")
@@ -64,9 +64,6 @@ public void ClickHotels()
 	Hotels.click();
 	
 }
-
-
-
 
 
 

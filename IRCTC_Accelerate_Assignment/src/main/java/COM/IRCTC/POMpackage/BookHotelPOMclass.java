@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.Select;
 public class BookHotelPOMclass 
 {
 private WebDriver driver;
-private Select s;
-private Select M;
+ private Select s;
+ //private Select M;
 
 
-@FindBy(xpath=("//b[text()='Continue to Book']"))
+@FindBy(xpath=("//button[@class='btn btn-radius-none yellow-gradient my-2']"))
  WebElement ContBook;	
 	
 public void ContinuetoBook() 
@@ -21,21 +21,68 @@ public void ContinuetoBook()
 	ContBook.click();
 }
 
+@FindBy(xpath=("//a[@id='profile-tab']"))
+WebElement GuestUser ;	
 
-
-
-@FindBy(xpath=("//select[@name='title']"))
-WebElement Title ;	
-	
-public void TitleField() 
+public void GuestLogin() 
 {
-	Title.click();
-	s.selectByValue("1");
+	GuestUser.click();
+}
+
+
+@FindBy(xpath=("//input[@name='email']"))
+WebElement Email1;	
+
+public void EmailO1() 
+{
+	Email1.click();
+	Email1.sendKeys("alam.hawaldar123@gmail.com");
+}
+
+@FindBy(xpath=("//input[@name='mobileNo']"))
+WebElement Mobile01;	
+
+public void MobileNumber01() 
+{
+	Mobile01.click();
+	Mobile01.sendKeys("9665023223");
+}
+
+
+@FindBy(xpath=("(//button[@class='btn btn-md btn-primary btn-radius yellow-gradient'])[2]"))
+WebElement Login01;	
+
+public void Login01() 
+{
+	Login01.click();
 	
 }
 
 
-@FindBy(xpath=("(//input[contains(@class,'form-control ng-pristine')])[1]"))
+@FindBy(xpath=("//select[@name='title']"))
+public WebElement MrTitle ;	
+	
+
+@FindBy(xpath=("//select[@name='state']"))
+public WebElement State ;	
+
+
+public void MrDopDown(WebElement Element,String value)
+{
+     Element.click();
+	 Select s = new Select(Element);
+	 s.selectByValue(value); 
+}
+
+public void StateDropDown(WebElement Element1,String value)
+{
+     Element1.click();
+	 Select p = new Select(Element1);
+	 p.selectByVisibleText(value);
+	
+}
+
+@FindBy(xpath=("//input[@name='firstName']"))
 WebElement Firstname;	
 	
 public void FirstName() 
@@ -44,7 +91,7 @@ public void FirstName()
 	Firstname.sendKeys("Alam");
 }
 
-@FindBy(xpath=("(//input[contains(@class,'form-control ng-pristine')])[2]"))
+@FindBy(xpath=("//input[@name='lastName']")) 
 WebElement Lastname;	
 	
 public void LastName() 
@@ -53,17 +100,7 @@ public void LastName()
 	Lastname.sendKeys("Sayyad");
 }
 
-@FindBy(xpath=("//select[@name='state']"))
-WebElement State ;	
-
-public void StateSelect() 
-{
-	Title.click();
-	s.selectByVisibleText("MAHARASHTRA");
-	
-}
-
-@FindBy(xpath=("//button[text()='Continue']"))
+@FindBy(xpath=("/html/body/app-root/app-fulllayout/app-paxdetail/div[2]/div/div/div[3]/div/div/div/form/div[9]/button[2]"))
 WebElement Continue ;	
 
 public void ClickonContinue() 
@@ -91,7 +128,6 @@ public void MakePayment() throws InterruptedException
 }
 
   
-
 @FindBy(xpath=("//button[text()='Verify']"))
 WebElement Verify ;	
 
@@ -101,7 +137,7 @@ public void Verify()
 	
 }
 
-@FindBy(xpath="// //p[text()='OTP not valid, Please try again.']")
+@FindBy(xpath="//p[text()='OTP not valid, Please try again.']")
 WebElement ErrorMessage;
 
 public String ErrorMessage()
@@ -112,15 +148,14 @@ public String ErrorMessage()
 }
 
 
-
-
-public BookHotelPOMclass (WebDriver driver)
+ public BookHotelPOMclass (WebDriver driver)
 {
 	this.driver = driver;
+	
 	PageFactory.initElements(driver,this);
 	
-	s = new Select(Title);
-	M = new Select(State);
+	//s = new Select(Title);
+	//M = new Select(State);
 
 }
 
