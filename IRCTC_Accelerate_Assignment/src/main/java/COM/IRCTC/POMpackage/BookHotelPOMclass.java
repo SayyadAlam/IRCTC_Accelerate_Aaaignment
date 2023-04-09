@@ -63,7 +63,7 @@ public void Login01()
 public WebElement MrTitle ;	
 	
 
-@FindBy(xpath=("//select[@name='state']"))
+@FindBy(xpath=("//select[@class='form-control ng-untouched ng-pristine ng-invalid']"))
 public WebElement State ;	
 
 
@@ -76,7 +76,7 @@ public void MrDopDown(WebElement Element,String value)
 
 public void StateDropDown(WebElement Element1,String value)
 {
-     Element1.click();
+	 Element1.click();
 	 Select p = new Select(Element1);
 	 p.selectByVisibleText(value);
 	

@@ -32,7 +32,7 @@ public class Scenario1 extends TestBaseClass
 	  List<String> ChangePage1 = new ArrayList<String>(driver.getWindowHandles());
 	  driver.switchTo().window(ChangePage1.get(1));
 	  
-	  //driver.manage().window().maximize();
+	  
 	  
 	  LoginPOMclass LP = new LoginPOMclass(driver);
 	  LP.LogInMethod();
@@ -48,12 +48,18 @@ public class Scenario1 extends TestBaseClass
 	   
 	  
 	  HotelsPOMclass HO = new HotelsPOMclass(driver);
-	  HO.CityName("Pune");
+	  HO.CityName("pune");
 	  Thread.sleep(2000);
 	  JavascriptExecutor js =(JavascriptExecutor)driver;
 	  js.executeScript("window.scrollBy(0,300)");
 	  Thread.sleep(2000);
 	  HO.SelectCity();
+	  HO.FromDate();
+	  Thread.sleep(2000);
+	  HO.SelectFromDate();
+	  HO.ToDate();
+	  Thread.sleep(2000);
+	  HO.SelectToDate();
 	  HO.SelectFacility();
       HO.SelectMethods(HO.Rooms,"1");
       HO.SelectMethods(HO.Adult,"3");

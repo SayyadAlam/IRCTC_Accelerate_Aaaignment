@@ -28,8 +28,8 @@ public class HotelsPOMclass
 	 
  }
 
- 
- @FindBy(xpath=("/html/body/app-root/app-fulllayout/app-home/div[2]/div[2]/div/app-hotelmodify/form/div[1]/searchbox/div/ul/li[3]/a/div[1]"))
+       
+ @FindBy(xpath=("(//div[@class='left_city'])[1]"))
  public WebElement Selectfirst;	
  
  public void SelectCity()
@@ -39,7 +39,43 @@ public class HotelsPOMclass
 	 act.moveToElement(Selectfirst).click().perform();
  }
  
-
+ @FindBy(xpath=("(//div[@class='form-in-custom width-13'])[1]"))
+ WebElement FromDate;	
+	
+ public void FromDate() 
+ {
+	 FromDate.click();
+ }
+ 
+ @FindBy(xpath=("(//span[@class='owl-dt-calendar-cell-content'])[15]"))
+ WebElement SelectDate;	
+	
+ public void SelectFromDate() 
+ {
+	 SelectDate.click();
+ }
+ 
+ 
+ @FindBy(xpath=("(//div[@class='form-in-custom width-13'])[2]"))
+ WebElement ToDate;	
+	
+ public void ToDate() 
+ {
+	 ToDate.click();
+ }
+ 
+ @FindBy(xpath=("(//span[@class='owl-dt-calendar-cell-content'])[17]"))
+ WebElement SelectToDate;	
+	
+ public void SelectToDate() 
+ {
+	 SelectToDate.click();
+ }
+ 
+ 
+ 
+ 
+ 
  
  @FindBy(xpath=("//input[@id='user-data-wrapper-id']"))
  WebElement SelectFacility;	

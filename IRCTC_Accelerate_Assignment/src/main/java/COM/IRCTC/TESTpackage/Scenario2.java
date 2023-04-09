@@ -29,7 +29,6 @@ public class Scenario2 extends TestBaseClass
 		  List<String> ChangePage1 = new ArrayList<String>(driver.getWindowHandles());
 		  driver.switchTo().window(ChangePage1.get(1));
 		  
-		 
 		  
 		  LoginPOMclass LP = new LoginPOMclass(driver);
 		  LP.LogInMethod();
@@ -45,12 +44,18 @@ public class Scenario2 extends TestBaseClass
 		   
 		  
 		  HotelsPOMclass HO = new HotelsPOMclass(driver);
-		  HO.CityName("Pune");
+		  HO.CityName("pune");
 		  Thread.sleep(2000);
 		  JavascriptExecutor js =(JavascriptExecutor)driver;
 		  js.executeScript("window.scrollBy(0,300)");
 		  Thread.sleep(2000);
 		  HO.SelectCity();
+		  HO.FromDate();
+		  Thread.sleep(2000);
+		  HO.SelectFromDate();
+		  HO.ToDate();
+		  Thread.sleep(2000);
+		  HO.SelectToDate();
 		  HO.SelectFacility();
 	      HO.SelectMethods(HO.Rooms,"1");
 	      HO.SelectMethods(HO.Adult,"3");
@@ -71,11 +76,15 @@ public class Scenario2 extends TestBaseClass
 		  BH.MobileNumber01();
 		  BH.Login01();
 		  BH.MrDopDown(BH.MrTitle,"1");
-		  BH.FirstName();
+		  BH.FirstName(); 
 		  BH.LastName();
-		  Thread.sleep(2000);
+		  Thread.sleep(3000);
 		  BH.StateDropDown(BH.State,"MAHARASHTRA");
-	      Thread.sleep(3000);
+	      BH.FirstName();
+	      Thread.sleep(2000);
+	      JavascriptExecutor As =(JavascriptExecutor)driver;
+		  As.executeScript("window.scrollBy(0,100)");
+		  Thread.sleep(2000);
 		  BH.ClickonContinue();
 		  BH.ClickMark();
 		  BH.MakePayment();
