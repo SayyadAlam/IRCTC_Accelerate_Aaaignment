@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-09T14:33:59 IST" name="Suite" finished-at="2023-04-09T14:35:34 IST" duration-ms="95591">
+  <suite started-at="2023-04-10T12:08:25 IST" name="Default suite" finished-at="2023-04-10T12:09:41 IST" duration-ms="76652">
     <groups>
     </groups>
-    <test started-at="2023-04-09T14:33:59 IST" name="Test" finished-at="2023-04-09T14:35:34 IST" duration-ms="95591">
+    <test started-at="2023-04-10T12:08:25 IST" name="Default test" finished-at="2023-04-10T12:09:41 IST" duration-ms="76652">
       <class name="COM.IRCTC.TESTpackage.Scenario2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario2@3059cbc]" started-at="2023-04-09T14:34:26 IST" name="setup" finished-at="2023-04-09T14:34:32 IST" duration-ms="6445" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario2@3738449f]" started-at="2023-04-10T12:08:25 IST" name="setup" finished-at="2023-04-10T12:08:36 IST" duration-ms="10807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyScenario1()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario2@3059cbc]" started-at="2023-04-09T14:34:32 IST" name="VerifyScenario1" finished-at="2023-04-09T14:35:34 IST" duration-ms="61713" status="PASS">
+        <test-method signature="VerifyScenario2()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario2@3738449f]" started-at="2023-04-10T12:08:36 IST" name="VerifyScenario2" finished-at="2023-04-10T12:09:41 IST" duration-ms="65801" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyScenario1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario2@3059cbc]" started-at="2023-04-09T14:35:34 IST" name="teardown" finished-at="2023-04-09T14:35:34 IST" duration-ms="294" status="PASS">
+        </test-method> <!-- VerifyScenario2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario2@3738449f]" started-at="2023-04-10T12:09:41 IST" name="teardown" finished-at="2023-04-10T12:09:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- COM.IRCTC.TESTpackage.Scenario2 -->
-      <class name="COM.IRCTC.TESTpackage.Scenario1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario1@69e1dd28]" started-at="2023-04-09T14:33:59 IST" name="setup" finished-at="2023-04-09T14:34:01 IST" duration-ms="1962" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VerifyScenario1()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario1@69e1dd28]" started-at="2023-04-09T14:34:01 IST" name="VerifyScenario1" finished-at="2023-04-09T14:34:25 IST" duration-ms="24805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyScenario1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:COM.IRCTC.TESTpackage.Scenario1@69e1dd28]" started-at="2023-04-09T14:34:25 IST" name="teardown" finished-at="2023-04-09T14:34:26 IST" duration-ms="339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- COM.IRCTC.TESTpackage.Scenario1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

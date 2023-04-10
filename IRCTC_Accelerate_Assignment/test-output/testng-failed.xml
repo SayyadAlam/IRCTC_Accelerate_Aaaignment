@@ -5,7 +5,7 @@
     <classes>
       <class name="COM.IRCTC.TESTpackage.Scenario2">
         <methods>
-          <include name="VerifyScenario1"/>
+          <include name="VerifyScenario2"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>

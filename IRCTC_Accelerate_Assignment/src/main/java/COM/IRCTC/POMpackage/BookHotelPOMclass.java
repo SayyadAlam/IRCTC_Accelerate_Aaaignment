@@ -10,12 +10,12 @@ public class BookHotelPOMclass
 {
 private WebDriver driver;
  private Select s;
- //private Select M;
+
 
 
 @FindBy(xpath=("//button[@class='btn btn-radius-none yellow-gradient my-2']"))
  WebElement ContBook;	
-	
+	  
 public void ContinuetoBook() 
 {
 	ContBook.click();
@@ -45,7 +45,7 @@ WebElement Mobile01;
 public void MobileNumber01() 
 {
 	Mobile01.click();
-	Mobile01.sendKeys("9665023223");
+	Mobile01.sendKeys("9665023232");
 }
 
 
@@ -127,6 +127,16 @@ public void MakePayment() throws InterruptedException
 	Thread.sleep(30000);
 }
 
+@FindBy(xpath=("(//input[@class='form-control ng-untouched ng-pristine ng-invalid'])[5]"))
+WebElement OTP ;	
+
+public void EnteringOTP() 
+{
+	OTP.click();
+	OTP.sendKeys("4826");
+	
+}
+
   
 @FindBy(xpath=("//button[text()='Verify']"))
 WebElement Verify ;	
@@ -154,8 +164,7 @@ public String ErrorMessage()
 	
 	PageFactory.initElements(driver,this);
 	
-	//s = new Select(Title);
-	//M = new Select(State);
+	
 
 }
 

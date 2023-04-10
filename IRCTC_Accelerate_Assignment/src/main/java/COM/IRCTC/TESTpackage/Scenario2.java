@@ -17,7 +17,7 @@ public class Scenario2 extends TestBaseClass
 
 	
 	@Test
-	  public void VerifyScenario1() throws InterruptedException 
+	  public void VerifyScenario2() throws InterruptedException 
 	  {
 		  Irctc_HomePOMclass HP = new Irctc_HomePOMclass(driver);
 		  HP.CloseDisha();
@@ -88,7 +88,10 @@ public class Scenario2 extends TestBaseClass
 		  BH.ClickonContinue();
 		  BH.ClickMark();
 		  BH.MakePayment();
+		  Thread.sleep(2000);
+		  BH.EnteringOTP();
 		  BH.Verify();
+		  
 		  
 		    String Actual = BH.ErrorMessage();
 			System.out.println(Actual);
